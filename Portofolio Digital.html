@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amir Hamzah, S. Ak - Portofolio Professional</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            rich: '#1b4332',    /* Hijau Kaya / Forest Green */
+                            deep: '#2d6a4f',    /* Hijau Sedang */
+                            light: '#40916c',   /* Hijau Muda Accent */
+                            beige: '#f4f1de',   /* Beige Terang Background Element */
+                            bg: '#faf9f5',      /* Background Utama Aesthetic Light */
+                            card: '#ffffff',    /* Card Background */
+                            dark: '#1a1c1a'     /* Text Dark */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #faf9f5;
+            color: #2b2d2f;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-light selection:text-white">
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 w-full bg-brand-bg/90 backdrop-blur-md z-50 border-b border-brand-beige">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-xl font-bold tracking-tight text-brand-rich flex items-center gap-2">
+                <span class="w-8 h-8 rounded-lg bg-brand-rich text-brand-beige flex items-center justify-center font-extrabold text-sm">AH</span>
+                Amir Hamzah<span class="text-brand-light">.</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-700">
+                <a href="#about" class="hover:text-brand-rich transition-colors">Tentang Saya</a>
+                <a href="#experience" class="hover:text-brand-rich transition-colors">Pengalaman</a>
+                <a href="#gallery" class="hover:text-brand-rich transition-colors">Galeri & Sertifikat</a>
+                <a href="#skills" class="hover:text-brand-rich transition-colors">Keahlian</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-brand-rich text-white hover:bg-brand-deep transition-all shadow-sm">Hubungi Saya</a>
+            </nav>
+
+            <button id="menu-btn" class="md:hidden text-brand-rich focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-bg border-b border-brand-beige px-6 py-4 space-y-3">
+            <a href="#about" class="block text-gray-700 hover:text-brand-rich py-1">Tentang Saya</a>
+            <a href="#experience" class="block text-gray-700 hover:text-brand-rich py-1">Pengalaman</a>
+            <a href="#gallery" class="block text-gray-700 hover:text-brand-rich py-1">Galeri & Sertifikat</a>
+            <a href="#skills" class="block text-gray-700 hover:text-brand-rich py-1">Keahlian</a>
+            <a href="#contact" class="block text-center py-2.5 rounded-xl bg-brand-rich text-white">Hubungi Saya</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen pt-32 pb-20 flex items-center justify-center relative overflow-hidden">
+        <div class="absolute top-20 right-10 w-96 h-96 bg-brand-beige rounded-full blur-3xl opacity-60 -z-10"></div>
+        <div class="absolute bottom-10 left-10 w-80 h-80 bg-emerald-100 rounded-full blur-3xl opacity-50 -z-10"></div>
+
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-beige text-brand-rich text-xs font-semibold tracking-wide uppercase mb-6 border border-brand-rich/10">
+                <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
+                Siap Berkontribusi & Profesional
+            </div>
+            
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-brand-rich tracking-tight leading-tight mb-4">
+                Amir Hamzah, S. Ak
+            </h1>
+            
+            <p class="text-xl sm:text-2xl font-medium text-brand-light mb-6">
+                Junior Finance, Accounting & Tax
+            </p>
+            
+            <p class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed mb-10">
+                Lulusan Akuntansi UMM (IPK 3,58) bersertifikasi kompetensi <span class="font-semibold text-brand-rich">BNSP</span> & <span class="font-semibold text-brand-rich">Brevet Pajak A & B</span>. Berpengalaman dalam pengelolaan administrasi keuangan, verifikasi tresuri, serta penyusunan laporan keuangan dan perpajakan secara akurat.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#contact" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-brand-rich text-white font-medium hover:bg-brand-deep transition-all shadow-lg shadow-brand-rich/20 flex items-center justify-center gap-2">
+                    <i class="fa-regular fa-envelope"></i> Hubungi Saya
+                </a>
+                <a href="#experience" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-white text-brand-rich border border-brand-rich/20 font-medium hover:bg-brand-beige transition-all flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-briefcase"></i> Lihat Pengalaman
+                </a>
+            </div>
+
+            <div class="mt-12 flex flex-wrap justify-center gap-6 text-sm text-gray-600">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-brand-light"></i>
+                    <span>Jakarta, Indonesia</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-envelope text-brand-light"></i>
+                    <span>akuhamjee@gmail.com</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-phone text-brand-light"></i>
+                    <span>+62 857-8563-2125</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section (FOTO DIRI) -->
+    <section id="about" class="py-20 bg-white border-y border-brand-beige/60">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-12 items-center">
+                
+                <!-- FOTO DIRI -->
+                <div class="md:col-span-5 flex justify-center">
+                    <div class="relative w-64 h-80 sm:w-72 sm:h-96 rounded-3xl overflow-hidden shadow-xl border-4 border-brand-beige bg-gray-100 flex items-center justify-center">
+                        <img src="https://i.ibb.co.com/7dKh5CkB/Foto-Hamzah.jpg" alt="Amir Hamzah" class="w-full h-full object-cover object-top">
+                    </div>
+                </div>
+
+                <div class="md:col-span-7">
+                    <span class="text-xs font-bold uppercase tracking-widest text-brand-light">Tentang Saya</span>
+                    <h2 class="text-3xl font-bold text-brand-rich mt-2 mb-6">Dedikasi Tinggi dalam Analisis Keuangan & Perpajakan</h2>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Saya adalah lulusan S1 Akuntansi Universitas Muhammadiyah Malang yang berdedikasi tinggi serta memiliki sertifikasi kompetensi resmi <strong class="text-brand-rich">BNSP (Menyusun Laporan Keuangan Entitas Tunggal)</strong> dan <strong class="text-brand-rich">Brevet Pajak A & B</strong>. Memiliki latar belakang pengalaman magang yang solid di bidang perpajakan dan treasury corporate.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed mb-8">
+                        Terbiasa mengolah dan memverifikasi ratusan data keuangan, mengunggah laporan pajak secara presisi, serta menyusun skripsi terapan mengenai <strong class="text-brand-rich">"Desain Sistem Akuntansi Laporan Keuangan Berbasis Microsoft Access"</strong>. Siap berkontribusi penuh dan bertumbuh secara profesional bersama perusahaan.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4 border-t border-gray-100 pt-6">
+                        <div>
+                            <h4 class="text-2xl font-bold text-brand-rich">100+</h4>
+                            <p class="text-xs text-gray-500 font-medium mt-1">SPT Terkonfirmasi & Asistensi Pajak</p>
+                        </div>
+                        <div>
+                            <h4 class="text-2xl font-bold text-brand-rich">900+</h4>
+                            <p class="text-xs text-gray-500 font-medium mt-1">Data Dokumen Transaksi Tresuri Terkelola</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-brand-bg">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-light">Rekam Jejak</span>
+                <h2 class="text-3xl font-bold text-brand-rich mt-2">Pengalaman Kerja & Magang</h2>
+                <p class="text-gray-600 text-sm mt-2">Pengalaman praktis di instansi BUMN dan lembaga perpajakan nasional</p>
+            </div>
+
+            <div class="space-y-8">
+                <div class="bg-white rounded-2xl p-6 sm:p-8 border border-brand-beige shadow-sm">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+                        <div>
+                            <span class="text-xs font-bold px-3 py-1 rounded-full bg-emerald-100 text-brand-rich">Maganghub Kemnaker</span>
+                            <h3 class="text-xl font-bold text-brand-rich mt-2">PT Pegadaian Pusat - Divisi Treasuri</h3>
+                            <p class="text-sm font-medium text-gray-500">Divisi Treasuri / Staf Administrasi & Keuangan</p>
+                        </div>
+                        <span class="text-xs font-semibold px-3 py-1.5 rounded-lg bg-brand-beige text-brand-rich self-start md:self-auto">
+                            Okt 2025 - Apr 2026
+                        </span>
+                    </div>
+                    <ul class="space-y-2.5 text-sm text-gray-600">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-brand-light mt-1"></i><span>Memverifikasi jurnal transaksi pendukung tresuri (Multi Pembayaran Online) secara teliti.</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-brand-light mt-1"></i><span>Mengelola lebih dari 900+ data dan dokumen administrasi transaksi pembayaran.</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-brand-light mt-1"></i><span>Mengelola pembukuan serta arsip digital dan fisik dokumen transaksi pembayaran.</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-brand-light mt-1"></i><span>Berkoordinasi dengan unit departemen lain terkait data transaksi keuangan.</span></li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 sm:p-8 border border-brand-beige shadow-sm">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+                        <div>
+                            <span class="text-xs font-bold px-3 py-1 rounded-full bg-amber-100 text-amber-900">Program DJP Kanwil III Jatim</span>
+                            <h3 class="text-xl font-bold text-brand-rich mt-2">Relawan Pajak - Tax Center UMM & KPP Pratama Batu</h3>
+                            <p class="text-sm font-medium text-gray-500">Asistensi & Edukasi Perpajakan</p>
+                        </div>
+                        <span class="text-xs font-semibold px-3 py-1.5 rounded-lg bg-brand-beige text-brand-rich self-start md:self-auto">
+                            Jan 2024 - Mar 2025
+                        </span>
+                    </div>
+                    <ul class="space-y-2.5 text-sm text-gray-600">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-brand-light mt-1"></i><span>Memberikan asistensi penyusunan SPT untuk 20 dosen/karyawan serta 106 wajib pajak perorangan.</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-brand-light mt-1"></i><span>Terlibat dalam program edukasi Tax Goes To School di SMPN 4 Batu dan Pojok Pajak Sumbergondo.</span></li>
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-brand-light mt-1"></i><span><strong>Prestasi:</strong> Memperoleh piagam penghargaan kategori emas dengan perolehan 13.650 poin.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery & Certifications Section (FOTO MAGANG & SERTIFIKAT) -->
+    <section id="gallery" class="py-20 bg-white border-y border-brand-beige/60">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-light">Dokumentasi Lapangan</span>
+                <h2 class="text-3xl font-bold text-brand-rich mt-2">Galeri Magang & Sertifikasi Resmi</h2>
+                <p class="text-gray-600 text-sm mt-2">Bukti visual kegiatan profesional di BUMN, Kantor Pajak, dan Sertifikasi Kompetensi</p>
+            </div>
+
+            <!-- Grid Foto Magang & Sertifikat -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Card 1: Magang Pegadaian -->
+                <div class="bg-brand-bg rounded-2xl p-4 border border-brand-beige shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-bold px-2.5 py-1 rounded bg-emerald-100 text-brand-rich">BUMN</span>
+                            <span class="text-xs text-gray-500">PT Pegadaian Pusat</span>
+                        </div>
+                        <h4 class="text-sm font-bold text-brand-rich mb-3">Aktivitas Divisi Treasuri</h4>
+                    </div>
+                    <div class="rounded-xl overflow-hidden h-48 bg-white border border-brand-beige flex items-center justify-center">
+                        <a href="https://i.ibb.co.com/JY197D8/Magang.jpg" target="_blank" title="Klik untuk memperbesar">
+                            <img src="https://i.ibb.co.com/JY197D8/Magang.jpg" alt="Magang Pegadaian" class="w-full h-full object-cover hover:scale-105 transition-transform">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Magang KPP Pratama Batu -->
+                <div class="bg-brand-bg rounded-2xl p-4 border border-brand-beige shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-bold px-2.5 py-1 rounded bg-amber-100 text-amber-900">DJP</span>
+                            <span class="text-xs text-gray-500">KPP Pratama Batu</span>
+                        </div>
+                        <h4 class="text-sm font-bold text-brand-rich mb-3">Relawan Pajak & Asistensi SPT</h4>
+                    </div>
+                    <div class="rounded-xl overflow-hidden h-48 bg-white border border-brand-beige flex items-center justify-center">
+                        <a href="https://i.ibb.co.com/svFr0Bvn/Relawan-Pajak.jpg" target="_blank" title="Klik untuk memperbesar">
+                            <img src="https://i.ibb.co.com/svFr0Bvn/Relawan-Pajak.jpg" alt="Relawan Pajak KPP Batu" class="w-full h-full object-cover hover:scale-105 transition-transform">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Sertifikat BNSP -->
+                <div class="bg-brand-bg rounded-2xl p-4 border border-brand-beige shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-bold px-2.5 py-1 rounded bg-emerald-100 text-brand-rich">BNSP</span>
+                            <span class="text-xs text-gray-500">Tahun 2026</span>
+                        </div>
+                        <h4 class="text-sm font-bold text-brand-rich mb-3">Sertifikasi Laporan Keuangan</h4>
+                    </div>
+                    <div class="rounded-xl overflow-hidden h-48 bg-white border border-brand-beige flex items-center justify-center">
+                        <a href="https://i.ibb.co.com/q3RJP7MG/sertifikat-bnsp-1.png" target="_blank" title="Klik untuk memperbesar">
+                            <img src="https://i.ibb.co.com/q3RJP7MG/sertifikat-bnsp-1.png" alt="Sertifikat BNSP" class="w-full h-full object-cover hover:scale-105 transition-transform">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 4: Sertifikat Brevet Pajak -->
+                <div class="bg-brand-bg rounded-2xl p-4 border border-brand-beige shadow-sm flex flex-col justify-between lg:col-span-3 sm:col-span-2">
+                    <div class="max-w-md">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-xs font-bold px-2.5 py-1 rounded bg-emerald-100 text-brand-rich">IAI</span>
+                            <span class="text-xs text-gray-500">Tahun 2025</span>
+                        </div>
+                        <h4 class="text-sm font-bold text-brand-rich mb-3">Pelatihan Pajak Terapan Brevet A & B</h4>
+                    </div>
+                    <div class="rounded-xl overflow-hidden h-56 bg-white border border-brand-beige flex items-center justify-center">
+                        <a href="https://i.ibb.co.com/tgHJLYW/Sertif-Brevet-Pajak-Amir-Hamzah.png" target="_blank" title="Klik untuk memperbesar">
+                            <img src="https://i.ibb.co.com/tgHJLYW/Sertif-Brevet-Pajak-Amir-Hamzah.png" alt="Sertifikat Brevet A & B" class="w-full h-full object-cover hover:scale-105 transition-transform">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-brand-bg">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-light">Kompetensi</span>
+                <h2 class="text-3xl font-bold text-brand-rich mt-2">Keahlian Utama</h2>
+                <p class="text-gray-600 text-sm mt-2">Software akuntansi, perpajakan, dan keterampilan pendukung</p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
+                <span class="px-4 py-2.5 bg-white rounded-xl text-sm font-medium text-brand-rich border border-brand-beige shadow-sm flex items-center gap-2">
+                    <i class="fa-solid fa-laptop-code text-brand-light"></i> Software Akuntansi (Accurate, Zahir & SAP)
+                </span>
+                <span class="px-4 py-2.5 bg-white rounded-xl text-sm font-medium text-brand-rich border border-brand-beige shadow-sm flex items-center gap-2">
+                    <i class="fa-solid fa-chart-line text-brand-light"></i> Penyusunan & Analisis Laporan Keuangan
+                </span>
+                <span class="px-4 py-2.5 bg-white rounded-xl text-sm font-medium text-brand-rich border border-brand-beige shadow-sm flex items-center gap-2">
+                    <i class="fa-solid fa-calculator text-brand-light"></i> Dasar Perpajakan & e-SPT
+                </span>
+                <span class="px-4 py-2.5 bg-white rounded-xl text-sm font-medium text-brand-rich border border-brand-beige shadow-sm flex items-center gap-2">
+                    <i class="fa-file-excel fa-regular text-brand-light"></i> Microsoft Office (Excel, Access, Word, PowerPoint)
+                </span>
+                <span class="px-4 py-2.5 bg-white rounded-xl text-sm font-medium text-brand-rich border border-brand-beige shadow-sm flex items-center gap-2">
+                    <i class="fa-solid fa-people-group text-brand-light"></i> Kerja Sama Tim & Mandiri
+                </span>
+                <span class="px-4 py-2.5 bg-white rounded-xl text-sm font-medium text-brand-rich border border-brand-beige shadow-sm flex items-center gap-2">
+                    <i class="fa-solid fa-lightbulb text-brand-light"></i> Problem Solving & Decision Making
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-brand-rich text-white rounded-3xl p-8 sm:p-12 relative overflow-hidden shadow-xl">
+                <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-brand-light/20 rounded-full blur-2xl"></div>
+                
+                <div class="relative z-10 text-center max-w-xl mx-auto">
+                    <span class="text-xs font-bold uppercase tracking-widest text-brand-beige">Hubungi Saya</span>
+                    <h2 class="text-3xl font-bold mt-2 mb-4">Mari Berdiskusi dan Bekerja Sama</h2>
+                    <p class="text-brand-beige/80 text-sm leading-relaxed mb-8">
+                        Saya siap membuka peluang karir di bidang Finance, Accounting, maupun Tax. Silakan hubungi saya melalui kontak di bawah ini.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 text-left mb-8">
+                        <a href="mailto:akuhamjee@gmail.com" class="p-4 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/10 transition-all flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-brand-beige text-brand-rich flex items-center justify-center font-bold">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div class="overflow-hidden">
+                                <p class="text-xs text-brand-beige/70">Email</p>
+                                <p class="text-sm font-semibold truncate">akuhamjee@gmail.com</p>
+                            </div>
+                        </a>
+
+                        <a href="https://wa.me/6285785632125" target="_blank" class="p-4 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/10 transition-all flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-brand-beige text-brand-rich flex items-center justify-center font-bold">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-brand-beige/70">Telepon / WhatsApp</p>
+                                <p class="text-sm font-semibold">+62 857-8563-2125</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="flex justify-center gap-4 text-sm text-brand-beige/80">
+                        <span class="flex items-center gap-1.5">
+                            <i class="fa-solid fa-location-dot"></i> Jakarta, Indonesia
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-brand-bg border-t border-brand-beige text-center text-xs text-gray-500">
+        <div class="max-w-6xl mx-auto px-6">
+            <p>&copy; 2026 Amir Hamzah, S. Ak. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
